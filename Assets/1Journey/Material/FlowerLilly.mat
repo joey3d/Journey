@@ -1,0 +1,55 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: FlowerLilly
+  m_Shader: {fileID: 4800000, guid: 24c97837c99193046b1dae8144080be1, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 1
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _A:
+        m_Texture: {fileID: 2800000, guid: 62ad6c93bd8469d4abd3924b8fb0f4cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _A1:
+        m_Texture: {fileID: 2800000, guid: 62ad6c93bd8469d4abd3924b8fb0f4cf, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _A2:
+        m_Texture: {fileID: 2800000, guid: f94095be3fec1a8488a55c1d8e99b11c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _D:
+        m_Texture: {fileID: 2800000, guid: c7f80aad8e389ea4b9471e1057bb9fa1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: dbe13181f05494347b99e7161392b2d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _TransAmbient: 1
+    - _TransDirect: 1
+    - _TransNormalDistortion: 0.318
+    - _TransScattering: 2.4
+    - _TransShadow: 1
+    - _Translucency: 5.6
+    - _WindPower: 0.17
+    - __dirty: 0
+    m_Colors:
+    - _T: {r: 0.7647059, g: 0.5410333, b: 0.4498269, a: 0}
