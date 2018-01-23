@@ -13,6 +13,7 @@ Shader "New AmplifyShader"
 		_TransDirect("Direct", Range( 0 , 1)) = 1
 		_TransAmbient("Ambient", Range( 0 , 1)) = 0.2
 		_TransShadow("Shadow", Range( 0 , 1)) = 0.9
+		_Translucency("Translucency", Color) = (0.9720081,1,0.4926471,0)
 		_D("D", 2D) = "white" {}
 		_R("R", Float) = 0
 		[HideInInspector] _texcoord( "", 2D ) = "white" {}
@@ -56,6 +57,8 @@ Shader "New AmplifyShader"
 		UNITY_INSTANCING_BUFFER_START(NewAmplifyShader)
 			UNITY_DEFINE_INSTANCED_PROP(float, _R)
 #define _R_arr NewAmplifyShader
+			UNITY_DEFINE_INSTANCED_PROP(float4, _Translucency)
+#define _Translucency_arr NewAmplifyShader
 		UNITY_INSTANCING_BUFFER_END(NewAmplifyShader)
 
 		inline half4 LightingStandardCustom(SurfaceOutputStandardCustom s, half3 viewDir, UnityGI gi )
@@ -98,7 +101,8 @@ Shader "New AmplifyShader"
 			o.Albedo = tex2DNode1.rgb;
 			float _R_Instance = UNITY_ACCESS_INSTANCED_PROP(_R_arr, _R);
 			o.Smoothness = _R_Instance;
-			o.Translucency = ( tex2DNode1 * float4(0.9720081,1,0.4926471,0) ).rgb;
+			float4 _Translucency_Instance = UNITY_ACCESS_INSTANCED_PROP(_Translucency_arr, _Translucency);
+			o.Translucency = ( tex2DNode1 * _Translucency_Instance ).rgb;
 			o.Alpha = tex2DNode1.a;
 		}
 
@@ -179,12 +183,12 @@ Shader "New AmplifyShader"
 }
 /*ASEBEGIN
 Version=14201
-7;29;1426;824;994;185;1;True;True
+7;29;1423;824;1418.652;515.0687;1.6;True;True
 Node;AmplifyShaderEditor.TextureCoordinatesNode;3;-966,39;Float;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.ColorNode;7;-579,317;Float;False;Constant;_Translucency;Translucency;3;0;Create;0.9720081,1,0.4926471,0;0,0,0,0;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.SamplerNode;1;-675,7;Float;True;Property;_D;D;6;0;Create;d17d9110707343d4c85c8b0ae793652c;d17d9110707343d4c85c8b0ae793652c;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0.0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1.0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
-Node;AmplifyShaderEditor.RangedFloatNode;2;-223,88;Float;False;InstancedProperty;_R;R;7;0;Create;0;0.6;0;0;0;1;FLOAT;0
-Node;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-288,250;Float;False;2;2;0;COLOR;0.0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.ColorNode;7;-579,317;Float;False;InstancedProperty;_Translucency;Translucency;6;0;Create;0.9720081,1,0.4926471,0;0.972008,1,0.4926471,0;0;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SamplerNode;1;-675,7;Float;True;Property;_D;D;7;0;Create;d17d9110707343d4c85c8b0ae793652c;d17d9110707343d4c85c8b0ae793652c;True;0;False;white;Auto;False;Object;-1;Auto;Texture2D;6;0;SAMPLER2D;;False;1;FLOAT2;0,0;False;2;FLOAT;0.0;False;3;FLOAT2;0,0;False;4;FLOAT2;0,0;False;5;FLOAT;1.0;False;5;COLOR;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4
+Node;AmplifyShaderEditor.SimpleMultiplyOpNode;6;-288,250;Float;False;2;2;0;COLOR;0,0,0,0;False;1;COLOR;0,0,0,0;False;1;COLOR;0
+Node;AmplifyShaderEditor.RangedFloatNode;2;-223,88;Float;False;InstancedProperty;_R;R;8;0;Create;0;0;0;0;0;1;FLOAT;0
 Node;AmplifyShaderEditor.StandardSurfaceOutputNode;0;0,0;Float;False;True;2;Float;ASEMaterialInspector;0;0;Standard;New AmplifyShader;False;False;False;False;False;False;False;False;False;False;False;False;False;False;True;False;False;Off;0;0;False;0;0;Transparent;0.5;True;True;0;False;Transparent;Transparent;ForwardOnly;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;True;False;0;255;255;0;0;0;0;0;0;0;0;False;2;15;10;25;False;0.5;True;2;SrcAlpha;OneMinusSrcAlpha;0;Zero;Zero;OFF;OFF;0;False;0;0,0,0,0;VertexOffset;True;False;Cylindrical;False;Relative;0;;-1;0;-1;-1;0;0;0;False;0;0;16;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0.0;False;4;FLOAT;0.0;False;5;FLOAT;0.0;False;6;FLOAT3;0,0,0;False;7;FLOAT3;0,0,0;False;8;FLOAT;0.0;False;9;FLOAT;0.0;False;10;FLOAT;0.0;False;13;FLOAT3;0,0,0;False;11;FLOAT3;0,0,0;False;12;FLOAT3;0,0,0;False;14;FLOAT4;0,0,0,0;False;15;FLOAT3;0,0,0;False;0
 WireConnection;1;1;3;0
 WireConnection;6;0;1;0
@@ -194,4 +198,4 @@ WireConnection;0;4;2;0
 WireConnection;0;7;6;0
 WireConnection;0;9;1;4
 ASEEND*/
-//CHKSM=3F6F05A842292DB2B0616E23F9FCB46247B0ED62
+//CHKSM=C868F80682E23BFE8F7BDBA7631C9B5D62110824
