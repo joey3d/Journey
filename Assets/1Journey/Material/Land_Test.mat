@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _D1:
-        m_Texture: {fileID: 2800000, guid: e33524d2d780ab7439fd19a0f2d4a802, type: 3}
+        m_Texture: {fileID: 2800000, guid: d9002a49dee5bc14c968027d9f3f974d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _D2:
@@ -31,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _N1:
-        m_Texture: {fileID: 2800000, guid: bbcad65c6aa096a4cb0b2d50604a7f70, type: 3}
+        m_Texture: {fileID: 2800000, guid: 8024fd8df0d5ccd4c82313744fa6c773, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _N2:

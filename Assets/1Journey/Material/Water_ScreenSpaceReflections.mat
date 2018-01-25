@@ -9,7 +9,7 @@ Material:
   m_Name: Water_ScreenSpaceReflections
   m_Shader: {fileID: 4800000, guid: d4984581d9b8bdb41b599be3b99ff450, type: 3}
   m_ShaderKeywords: 
-  m_LightmapFlags: 4
+  m_LightmapFlags: 0
   m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
@@ -56,4 +56,4 @@ Material:
     - _Roughness: 0.98
     - __dirty: 0
     m_Colors:
-    - _Color: {r: 0.11050954, g: 0.17431, b: 0.20588157, a: 0}
+    - _Color: {r: 0.11050946, g: 0.17430994, b: 0.2058815, a: 0}
