@@ -34,12 +34,20 @@ Material:
         m_Texture: {fileID: 2800000, guid: c7f80aad8e389ea4b9471e1057bb9fa1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Gradient:
+        m_Texture: {fileID: 2800000, guid: e9f86f1191ba1d64892fc4dd799f0e5b, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _N:
+        m_Texture: {fileID: 2800000, guid: dbe13181f05494347b99e7161392b2d6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Normal:
         m_Texture: {fileID: 2800000, guid: dbe13181f05494347b99e7161392b2d6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
-        m_Texture: {fileID: 2800000, guid: f94095be3fec1a8488a55c1d8e99b11c, type: 3}
+        m_Texture: {fileID: 2800000, guid: e9f86f1191ba1d64892fc4dd799f0e5b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample1:
@@ -68,6 +76,9 @@ Material:
     - _Float1: 1.01
     - _Float3: 0.02
     - _Float4: 0
+    - _FlowerTest: 0.01
+    - _FlowerWind: 0.01
+    - _Gradient_Intensity: 1
     - _OpacityClip: 1
     - _Scale: 0.0005
     - _Speed: 0.25
@@ -83,3 +94,4 @@ Material:
     - __dirty: 0
     m_Colors:
     - _T: {r: 0.7647059, g: 0.5410333, b: 0.4498269, a: 0}
+    - _WindVariation: {r: 0, g: -0.65, b: 0, a: 0}

@@ -94,6 +94,7 @@ ModelImporter:
     100172: Mesh1
     100174: Mesh2
     100176: sutr_tmave_sedy
+    100178: pSphere2
     400000: camera1
     400002: FlowerLilly_p1
     400004: FlowerLilly_p2
@@ -183,6 +184,7 @@ ModelImporter:
     400172: Mesh1
     400174: Mesh2
     400176: sutr_tmave_sedy
+    400178: pSphere2
     2000000: camera1
     2100000: lambert1
     2100002: Water
@@ -254,6 +256,7 @@ ModelImporter:
     2300128: Mesh1
     2300130: Mesh2
     2300132: sutr_tmave_sedy
+    2300134: pSphere2
     3300000: FlowerLilly_p1
     3300002: FlowerLilly_p2
     3300004: FlowerLilly_p3
@@ -321,6 +324,7 @@ ModelImporter:
     3300128: Mesh1
     3300130: Mesh2
     3300132: sutr_tmave_sedy
+    3300134: pSphere2
     4300000: pCube1
     4300002: pPlane1
     4300004: pPlane2
@@ -388,6 +392,7 @@ ModelImporter:
     4300128: Mesh1
     4300130: Mesh2
     4300132: sutr_tmave_sedy
+    4300134: pSphere2
     10800000: pointLight1
   externalObjects: {}
   materials:
