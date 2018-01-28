@@ -21,7 +21,6 @@ GameObject:
   - component: {fileID: 4126178743989260}
   - component: {fileID: 33835677098182678}
   - component: {fileID: 23934609273381472}
-  - component: {fileID: 95934214492433252}
   m_Layer: 0
   m_Name: FlowerLilly_p1
   m_TagString: Untagged
@@ -35,13 +34,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1296204200393622}
-  m_LocalRotation: {x: 0.051737573, y: 0.24853866, z: 0.18670568, w: -0.94904834}
-  m_LocalPosition: {x: -19.04, y: 10.248, z: -10.16}
-  m_LocalScale: {x: 1.42461, y: 1.4246101, z: 1.4246099}
+  m_LocalRotation: {x: -0.011241076, y: 0.32149774, z: 0.26183018, w: -0.9099219}
+  m_LocalPosition: {x: -4.2260003, y: 5.1330004, z: -11.091}
+  m_LocalScale: {x: 1.4246131, y: 1.4246131, z: 1.4246131}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: -11.012, y: 332.554, z: -19.562}
+  m_LocalEulerAnglesHint: {x: -8.505, y: 323.307, z: -29.281002}
 --- !u!23 &23934609273381472
 MeshRenderer:
   m_ObjectHideFlags: 1
@@ -83,20 +82,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1296204200393622}
   m_Mesh: {fileID: 4300006, guid: 777ac9ce00f82cd4c90ac258b08f6a48, type: 3}
---- !u!95 &95934214492433252
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1296204200393622}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 0083e5d6acb7dce48885f3368252d31d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
