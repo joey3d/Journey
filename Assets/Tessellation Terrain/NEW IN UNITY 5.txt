@@ -1,0 +1,28 @@
+PBS being part of all shaders in Unity 5 caused some drastic changes to
+how the Tessellated Terrain package works.
+Using the alpha channel of the diffuse texture for the displacement bump map is not an option anymore,
+since that makes it impossible for the shader to use smoothness or metallic maps.
+The Unity 5 version of this package supports both.
+
+This is achieved through some extra shader code and an editor tool.
+This tool is called "Tessellation Terrain Texture Wizard".
+It creates special textures that have all three maps (displacement (bump), smoothness, metallic) combined
+in their alpha channel, each taking a quarter of the available space.
+The shaders use the appropriate parts of the texture for further calculations.
+
+To use the wizard, right click into your assets (or click on "Assets" at thetop of the editor)
+and choose "Tessellation Terrain Texture Wizard".
+Assign a diffuse texture (the color map) and every other map you want as a grayscale texture.
+You'll find examples for appropriate textures in the demo folder.
+If you leave a field blank, the map is confidered black -
+which means zero displacement, smoothness or metallic...ness.
+
+Click the button to let the wizard create the texture.
+It will be saved to the same folder the given diffuse texture is in,
+with .TTT appended to the diffuse texture's filename.
+
+Use this texture in the "Splat" field of your terrain tool component.
+Add a normal map as usual if needed.
+
+If you recreate the texture using the wizard, it will be overriden,
+which means that the terrain will forget it. You have to reassign it after updating it.

@@ -1,0 +1,18 @@
+Terrain Tessellation Shaders © Sascha Graeff
+
+This document is provided for further understanding why blending doesn't work in some cases when using more than four textures.
+See "USING MORE THAN 4 TEXTURES" in the README.txt.
+
+
+THE ADDPASS PROBLEM
+
+Unity can handle exactly four textures on a terrain. To enable you to use more textures,
+it uses a so-called "AddPass" shader to draw the complete terrain again with the next four textures,
+and blends the result on the previous result.
+The respective four textures of each pass are not accessible for the other passes.
+This poses a problem since, with this shader, textures are used to change the geometry of the terrain.
+The results of changing the geometry cannot be passed to another pass.
+This is why - long story short - it is impossible to blend textures from different passes without creating
+displacement related graphical issues, like transparent terrain or dark borders around textures.
+
+If you have any ideas of improving this, please contact me via Asset Store.
