@@ -96,6 +96,24 @@ ModelImporter:
     100176: sutr_tmave_sedy
     100178: pSphere2
     100180: pCube81
+    100182: Group3989
+    100184: Group3990
+    100186: Group3991
+    100188: Group3992
+    100190: polySurface23
+    100192: polySurface31
+    100194: polySurface33
+    100196: polySurface34
+    100198: polySurface35
+    100200: polySurface36
+    100202: polySurface37
+    100204: polySurface38
+    100206: polySurface39
+    100208: polySurface40
+    100210: polySurface41
+    100212: Group25827
+    100214: pSphere3
+    100216: pSphere4
     400000: camera1
     400002: FlowerLilly_p1
     400004: FlowerLilly_p2
@@ -187,6 +205,24 @@ ModelImporter:
     400176: sutr_tmave_sedy
     400178: pSphere2
     400180: pCube81
+    400182: Group3989
+    400184: Group3990
+    400186: Group3991
+    400188: Group3992
+    400190: polySurface23
+    400192: polySurface31
+    400194: polySurface33
+    400196: polySurface34
+    400198: polySurface35
+    400200: polySurface36
+    400202: polySurface37
+    400204: polySurface38
+    400206: polySurface39
+    400208: polySurface40
+    400210: polySurface41
+    400212: Group25827
+    400214: pSphere3
+    400216: pSphere4
     2000000: camera1
     2100000: lambert1
     2100002: Water
@@ -260,6 +296,24 @@ ModelImporter:
     2300132: sutr_tmave_sedy
     2300134: pSphere2
     2300136: pCube81
+    2300138: Group3989
+    2300140: Group3990
+    2300142: Group3991
+    2300144: Group3992
+    2300146: polySurface23
+    2300148: polySurface31
+    2300150: polySurface33
+    2300152: polySurface34
+    2300154: polySurface35
+    2300156: polySurface36
+    2300158: polySurface37
+    2300160: polySurface38
+    2300162: polySurface39
+    2300164: polySurface40
+    2300166: polySurface41
+    2300168: Group25827
+    2300170: pSphere3
+    2300172: pSphere4
     3300000: FlowerLilly_p1
     3300002: FlowerLilly_p2
     3300004: FlowerLilly_p3
@@ -329,6 +383,24 @@ ModelImporter:
     3300132: sutr_tmave_sedy
     3300134: pSphere2
     3300136: pCube81
+    3300138: Group3989
+    3300140: Group3990
+    3300142: Group3991
+    3300144: Group3992
+    3300146: polySurface23
+    3300148: polySurface31
+    3300150: polySurface33
+    3300152: polySurface34
+    3300154: polySurface35
+    3300156: polySurface36
+    3300158: polySurface37
+    3300160: polySurface38
+    3300162: polySurface39
+    3300164: polySurface40
+    3300166: polySurface41
+    3300168: Group25827
+    3300170: pSphere3
+    3300172: pSphere4
     4300000: pCube1
     4300002: pPlane1
     4300004: pPlane2
@@ -398,6 +470,24 @@ ModelImporter:
     4300132: sutr_tmave_sedy
     4300134: pSphere2
     4300136: pCube81
+    4300138: Group3989
+    4300140: Group3990
+    4300142: Group3991
+    4300144: Group3992
+    4300146: polySurface23
+    4300148: polySurface31
+    4300150: polySurface33
+    4300152: polySurface34
+    4300154: polySurface35
+    4300156: polySurface36
+    4300158: polySurface37
+    4300160: polySurface38
+    4300162: polySurface39
+    4300164: polySurface40
+    4300166: polySurface41
+    4300168: Group25827
+    4300170: pSphere3
+    4300172: pSphere4
     10800000: pointLight1
   externalObjects: {}
   materials:

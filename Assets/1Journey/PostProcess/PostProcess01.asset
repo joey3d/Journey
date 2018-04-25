@@ -18,6 +18,8 @@ MonoBehaviour:
   - {fileID: 114790342316831364}
   - {fileID: 114492469230956024}
   - {fileID: 114270248266638854}
+  - {fileID: 114807646876432694}
+  - {fileID: 114331394744959730}
 --- !u!114 &114261801797122496
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -164,10 +166,10 @@ MonoBehaviour:
     value: 0
   postExposure:
     overrideState: 1
-    value: 0
+    value: 1.5
   contrast:
     overrideState: 1
-    value: 0
+    value: 12
   mixerRedOutRedIn:
     overrideState: 1
     value: 126
@@ -348,6 +350,48 @@ MonoBehaviour:
       m_Loop: 0
       m_ZeroValue: 0.5
       m_Range: 1
+--- !u!114 &114331394744959730
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40b924e2dad56384a8df2a1e111bb675, type: 3}
+  m_Name: Vignette
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  mode:
+    overrideState: 1
+    value: 0
+  color:
+    overrideState: 1
+    value: {r: 0, g: 0, b: 0, a: 1}
+  center:
+    overrideState: 1
+    value: {x: 0.5, y: 0.5}
+  intensity:
+    overrideState: 1
+    value: 0.461
+  smoothness:
+    overrideState: 1
+    value: 0.316
+  roundness:
+    overrideState: 1
+    value: 1
+  rounded:
+    overrideState: 1
+    value: 0
+  mask:
+    overrideState: 0
+    value: {fileID: 0}
+  opacity:
+    overrideState: 0
+    value: 1
 --- !u!114 &114492469230956024
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -435,3 +479,24 @@ MonoBehaviour:
   vignette:
     overrideState: 0
     value: 0.5
+--- !u!114 &114807646876432694
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94fcd11afffcb142908bfcb1e261fba, type: 3}
+  m_Name: MotionBlur
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  shutterAngle:
+    overrideState: 1
+    value: 270
+  sampleCount:
+    overrideState: 1
+    value: 10
